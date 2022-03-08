@@ -7,6 +7,7 @@
 /* COMMON */
 html {
     font-family: 'Rubik Mono One', sans-serif;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -57,7 +58,7 @@ usiamo il trucchetto del transform per centrare il div
 e mettiamo una dimensione al testo al suo interno e un line height per accorciare l'interlinea */
 
 .shoe .content {
-    width: 15em;
+    width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
