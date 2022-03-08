@@ -27,20 +27,21 @@ nav {
 /* Stilizziamo i list items del nav come dei cerchi, con le regole per piazzare il testo centrato */
 nav li {
     display: inline-block;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
     margin: 0 1em;
     background-color: white;
     color: black;
     line-height: 3em;
     text-align: center;
+    border-radius: 50%;
 }
 
 /* stilizzazione del testo del nav */
 nav a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    width: 3em;
+    height: 3em;
 }
 
 /* dimensioniamo ciascuna sezione con l'altezza fissa di 100vh */
