@@ -4,15 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* COMMON */
 html {
-    font-family: 'Bungee', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 img {
     width: 100%;
 }
 
+
+/* NAV */
+/* Piazziamo il nav in posizione fixed e con z-index alto per posizionarlo sempre sopra a tutto */
 nav {
     position: fixed;
     top: 2em;
@@ -20,6 +23,7 @@ nav {
     z-index: 50;
 }
 
+/* Stilizziamo i list items del nav come dei cerchi, con le regole per piazzare il testo centrato */
 nav li {
     display: inline-block;
     width: 3em;
@@ -32,18 +36,28 @@ nav li {
     text-align: center;
 }
 
+/* stilizzazione del testo del nav */
 nav a {
     text-decoration: none;
     color: inherit;
 }
 
+/* dimensioniamo ciascuna sezione con l'altezza fissa di 100vh */
+/* gli diamo position relative così da poter piazzare il contenuto al suo interno
+con position absolute */
 .shoe {
     height: 100vh;
     position: relative;
 }
 
+/* 
+dentro ogni sezione c'è un div contenitore con l'immagine e una didascalia.
+stilizziamo questo div per occupare il 40% di larghezza del padre,
+usiamo il trucchetto del transform per centrare il div
+e mettiamo una dimensione al testo al suo interno e un line height per accorciare l'interlinea */
+
 .shoe .content {
-    width: 40%;
+    width: 15em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,14 +67,14 @@ nav a {
     line-height: 1.5em;
 }
 
+/* diamo alle immagini delle scarpe un display block per evitare spaziature indesiderate */
 .shoe img {
     display: block;
 }
 
-/* img, img+div {
-    border: 2px solid black;
-    margin: auto;
-} */
+
+/* stilizzazione dei colori dei singoli div  */
+
 #s1 {
     background-color: red;
     color: yellow;
